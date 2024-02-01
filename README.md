@@ -134,12 +134,14 @@ ___
 ## Instance Methods
 
 - Acessor - Getter Method
-    -<pre>Class id{
-            private id;
-            public void getID(){
-                syso(id);
+    - ```java
+        class id{
+                private id;
+                public void getID(){
+                    syso(id);
+                }
         }
-    }
+        ```
 - Mutator Method - Setter method
      -<pre>Class id{
             private id;
@@ -188,7 +190,8 @@ Method Signature
 - Important points for static variables :-
     - we can create static variables at class level only. See here
     - static block and static variables are executed in the order they are present in a program.
-<pre>// Java program to demonstrate execution
+``` java
+// Java program to demonstrate execution
 // of static blocks and variables
 class Test {
     // static variable
@@ -213,7 +216,8 @@ class Test {
         System.out.println("Value of a : " + a);
         System.out.println("from main");
     }
-}</pre>
+}
+```
 
 
 ### Non-Static Variable
@@ -251,13 +255,17 @@ ____
 
 ## instance methods 
 - accessor method  - getter()
-    <pre>void setter(string name){
+    ```java
+    void setter(string name){
         this.name = name;
-    }</pre>
+    }
+    ```
 - mutautor method - setter()
-    <pre>string getname(){
+    ```java
+    string getname(){
         return name;
-    } </pre>
+    } 
+    ```
 
 ____
 ____
@@ -282,9 +290,12 @@ ____
 ## Method
 - way to perfoem some tasks
 - in java is a collction of instructions that collectively perform some task
-- <pre>  public static int sum(int a, int b){ 
+- ```java
+    
+  public static int sum(int a, int b){ 
          return a + b; 
     }
+    ```
 - Method Header = public int sum(int a, int b)
 - Method signature = sum(int a, int b)
 <br>
@@ -309,8 +320,58 @@ ____
 - instance block
 
 ## Constructors
+- <pre>ClassName(){
+        do something at the time of object creation
+        defaultly it doesnt do anything
+     }
+- used for object creation or initialization
+    - Dfault constructor i.e zero arguement  ClassName()
+    - User defined parameterized constructor
+    - can overload constructors based on params
+    - 
+    - No return type
+```java
+package LAB2;
+
+public class constructor {
+    public static class test{
+        int a;
+        int b;
+        int c;
+
+        test(){
+            this.a = 0;
+            this.b = 0;
+            this.c = 0;
+        }
+
+        test(int a, int b, int c){
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        public void getter(){
+            System.err.println(a+"===="+b+"===="+c);
+        }
+        public void addder(){
+            System.err.println("addition="+(a+b+c));
+        }
+    }
+
+    public static void main(String[] args) {
+        test t0 = new test();       // default constructor
+        t0.a=10;
 
 
+        
+
+        test t1= new test(10,3,10);     // user defined constructor
+        t1.getter();
+        t1.addder();
+    }
+}
+    
+```
 
 
 
