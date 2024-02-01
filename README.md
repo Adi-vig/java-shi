@@ -95,3 +95,192 @@ ___
 # Some rules
  - cant use Instace variables in Static area (need to create object)
  - can use instance methods in  \<someone fill this shit>
+ - A <strong>static method cannot access a class's instance variables and instance methods,</strong> because a static method can be called even when no objects of the class have been instantiated. For the same reason, the this reference cannot be used in a static method.
+
+
+
+### static variables
+- Static Variables: When a variable is declared as static, then a single copy of the variable is created and shared among all objects at a class level. Static variables are, essentially, global variables. All instances of the class share the same static variable.
+- Important points for static variables :-
+    - we can create static variables at class level only. See here
+    - static block and static variables are executed in the order they are present in a program.
+<pre>// Java program to demonstrate execution
+// of static blocks and variables
+class Test {
+    // static variable
+    static int a = m1();
+   
+    // static block
+    static
+    {
+        System.out.println("Inside static block");
+    }
+   
+    // static method
+    static int m1()
+    {
+        System.out.println("from m1");
+        return 20;
+    }
+   
+    // static method(main !!)
+    public static void main(String[] args)
+    {
+        System.out.println("Value of a : " + a);
+        System.out.println("from main");
+    }
+}</pre>
+
+
+### Non-Static Variable
+- Local Variables: A variable defined within a block or method or constructor is called local variable.
+- These variables are created when the block in entered or the function is called and destroyed after exiting from the block or when the call returns from the function.
+- The scope of these variables exists only within the block in which the variable is declared. i.e. we can access this variable only within that block.
+- Initialisation of Local Variable is Mandatory.
+### instance variables
+- Instance variables are non-static variables and are declared in a class outside any method, constructor or block.
+    - As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+    - Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier then the default access specifier will be used.
+    - Initialisation of Instance Variable is not Mandatory. Its default value is 0
+    - Instance Variable can be accessed only by creating objects.
+### <a href="https://www.geeksforgeeks.org/difference-between-static-and-non-static-variables-in-java/">GFG article for static/instance/local var</a>
+____
+
+
+# Class vs Object
+ - object is a instance of a class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## instance methods 
+- accessor method  - getter()
+    <pre>void setter(string name){
+        this.name = name;
+    }</pre>
+- mutautor method - setter()
+    <pre>string getname(){
+        return name;
+    } </pre>
+
+____
+____
+
+## Heap Memory 
+- used to store Objects
+- out of memory error
+- more memory 
+- public memory 
+- <strong>new</strong> is used 
+## stack memory 
+- function calls / initialize contructors
+- local variables
+- stack overflow error
+- less memory
+- private memory
+- object will be destroyed when it becomes <strong>out of scope</strong>
+
+
+
+
+## Method
+- way to perfoem some tasks
+- in java is a collction of instructions that collectively perform some task
+- <pre>  public static int sum(int a, int b){ 
+         return a + b; 
+    }
+- Method Header = public int sum(int a, int b)
+- Method signature = sum(int a, int b)
+<br>
+<br>
+    - {Access specifier} {return type} {method name} ( {params} ) 
+    - {
+        - method body
+    - }
+
+- Ramdom keywords:
+    - Method overloading - parameter based
+    - User defined methods
+    - abstrct methods
+    - static/instance methods 
+
+
+## class structure
+- data members (variables)
+- methods 
+- contructors
+- static block
+- instance block
+
+## Constructors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
