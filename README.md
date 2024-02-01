@@ -373,10 +373,47 @@ public class constructor {
     
 ```
 
+___
+### Conversion of Local variable to static variable and instance variable
+
+```java
+package thierory;
+
+public class conversions {
+    int a;
+    static int static_a;
+
+    void convert(int arg) {
+        int local= arg+10;
 
 
+        
+        this.a=local;
+        static_a=local;
+    }
+
+    public static void main(String[] args) {
+        conversions t= new conversions();
+        t.convert(10);
+        
+    }
+}
+
+```
 
 
+## Array
+- collection of same typed objects
+- length fixed at the time of creation
+- ```java
+    int[] arr={1,24,5,6,7,7,7};
+    int arr[]={24,12,5,15,1,5};
+    //indices 0 1 2 3 ...n-1 for a array of length n
+    for(int i=0; i<arr.length ; i++){
+        System.out.println(arr[i] + " ");
+    }
+
+  ```
 
 
 
