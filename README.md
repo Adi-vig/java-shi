@@ -419,6 +419,73 @@ public class conversions {
 
 
 
+___
+
+### Final Keyword:
+- non-access modifier
+- used for classes , attributes/variables and methods
+- makes them non-changeable (cannot inherit or override)
+- final keyword used when want to store the same value like pi = 3.1415
+- called <i>"Modifier"</i>
+    - Stop values change
+    - Stope method overloading
+    - stop inheritance
+
+
+
+#### final Variable
+```java
+class Bike{
+    final int speedlimit=90; // final variable
+    void run(){
+        speedlimit=140;    
+    }
+
+    public static void main(String args[]){
+        Bike b= new Bike();
+        b.run();
+    }
+}
+```
+
+
+```bash
+Output :  Compile time error
+```
+
+
+
+
+
+#### final method
+```java
+class Bike{
+    final void run(){
+        System.out.println("final running"); 
+    }
+}
+
+   
+class Honda extends Bike{
+
+    void run(){
+        System.out.println("honda bike running overloading....");
+    }
+    
+    public static void main(String args[]){
+        Honda h= new Honda();
+        honda.run();
+    }
+
+}     
+
+```
+
+
+```bash
+Output :  Compile time error
+```
+
 
 
 
