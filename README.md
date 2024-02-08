@@ -491,6 +491,55 @@ Output :  Compile time error
 
 
 
+#### final class
+(cannot extend final class)
+```java
+final class Bike{
+    
+}
+
+   
+class Honda extends Bike{
+
+    void run(){
+        System.out.println("honda bike extending....");
+    }
+    
+    public static void main(String args[]){
+        Honda h= new Honda();
+        honda.run();
+    }
+
+}     
+
+```
+
+
+```bash
+Output :  Compile time error
+```
+
+
+
+
+
+_____
+
+## Method
+- method have a return type constructor dont.
+
+### Overloading
+1. Based on number of arguments
+2. Based on data type
+ 
+
+### Overriding
+- occurs when a child class has its method implementation for the method already present in the parent class
+
+
+
+
+
 
 
 
